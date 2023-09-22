@@ -1,0 +1,37 @@
+HTTP/1.1 200 OK\nGMT\nServer: Apache/2.2.14 (Win32)\nLast-Modified: Wed, 22, July 2009 19:15:56 GMT\nContent-Type: text/html\nConnection: Closed\n\n
+
+<!DOCTYPE html>
+<html style='height:100%'>
+    
+<head>
+  <title>Level 2</title>
+</head>
+
+<body style='background-color:#000000; height:100%;'>
+    
+    <h1 style='color:green; text-align:right;'>100</h1>
+    
+    <div style='height:30%;'></div>
+    
+    <h1 style='color:white; height:60%; text-align:center;'>Level 2</h1>
+    
+    <p style='color:white;'>*hint: maybe we can skip Level2 with the url</p>
+    
+    <button type='button' id='goodBtn' hidden='true'>Click me!</button>
+    <button type='button' id='badBtn' hidden='true'>Don't click me!</button>
+    
+    <script>
+        var btn1 = document.getElementById('goodBtn');
+        var btn2 = document.getElementById('badBtn');
+        btn1.onclick = function(){
+            window.location.href = "Level3_a";
+        }
+        btn2.onclick = function(){
+            //Seriously tho, don't click this button
+            window.location.href = "Level3_b";
+        }
+    </script>
+    
+</body>
+
+</html>

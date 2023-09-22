@@ -1,0 +1,38 @@
+HTTP/1.1 200 OK\nGMT\nServer: Apache/2.2.14 (Win32)\nLast-Modified: Wed, 22, July 2009 19:15:56 GMT\nContent-Type: text/html\nConnection: Closed\n\n
+
+<!DOCTYPE html>
+<html style='height:100%'>
+    
+<head>
+  <title>Level 3</title>
+</head>
+
+<body style='background-color:#000000; height:100%;'>
+    
+    <h1 style='color:green; text-align:right;'>200</h1>
+    
+    <div style='height:30%;'></div>
+    
+    <h1 style='color:white; height:60%; text-align:center;'>Level 3</h1>
+    
+    <p style='color:white;'>*hint: enter a username to save your score</p>
+    
+    <p id='Username'></p>
+    
+    <p id='lol' hidden='true'>the cake is a </p>
+    
+    <script>
+        var usr = document.getElementById('Username');
+        var lol = document.getElementById('lol');
+        const interval = setInterval(function() {
+            if (usr.textContent != "" && lol.textContent == "the cake is a lie") {
+                window.location.href = "end0?_" + usr.textContent;
+            } else if (usr.textContent != "") {
+                window.location.href = "end1?_" + usr.textContent;
+            }
+        }, 1000);
+    </script>
+    
+</body>
+
+</html>

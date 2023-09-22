@@ -1,0 +1,4 @@
+Webserver hosted in C
+
+gcc test.c Server.c
+./a.out
